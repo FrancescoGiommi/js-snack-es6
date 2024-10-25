@@ -29,7 +29,7 @@ const bycicles = [
   },
 ];
 
-console.log(bycicles[0]);
+console.log(bycicles[0].name, bycicles[0].weigth);
 
 // ! Snack 2
 
@@ -109,4 +109,15 @@ for (
   newFootballTeam[1].foulsSuffered = randomNumber;
   newFootballTeam[2].foulsSuffered = randomNumber;
 }
-console.log(newFootballTeam);
+console.log(
+  newFootballTeam[0].name,
+  " " + `Falli fatti :${newFootballTeam[0].foulsSuffered}`
+);
+console.log(
+  newFootballTeam[1].name,
+  " " + `Falli fatti :${newFootballTeam[1].foulsSuffered}`
+);
+console.log(
+  newFootballTeam[2].name,
+  " " + `Falli fatti :${newFootballTeam[2].foulsSuffered}`
+);
