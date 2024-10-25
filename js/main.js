@@ -22,7 +22,7 @@ const bycicles = [
     name: "bici1",
     weigth: "10kg",
   },
-
+  /* Bici 2 */
   {
     name: "bici 2",
     weigth: "15 kg",
@@ -30,3 +30,27 @@ const bycicles = [
 ];
 
 console.log(bycicles[0]);
+
+// ! Snack 2
+
+const footballTeam = [
+  {
+    name: "Squadra1",
+    point: 0,
+    foulsSuffered: 0,
+  },
+  {
+    name: "Squadra2",
+    point: 0,
+    foulsSuffered: 0,
+  },
+  {
+    name: "Squadrta3",
+    point: 0,
+    foulsSuffered: 0,
+  },
+];
+
+console.log(footballTeam);
+
+const randomNumber = Math.floor(Math.random() * 100) + 1;
