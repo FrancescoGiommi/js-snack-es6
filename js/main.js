@@ -51,6 +51,23 @@ const footballTeam = [
   },
 ];
 
-console.log(footballTeam);
-
 const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+for (
+  let i = 0;
+  i == footballTeam[0].point &&
+  i == footballTeam[1].point &&
+  i == footballTeam[2].point &&
+  i == footballTeam[0].foulsSuffered &&
+  i == footballTeam[1].foulsSuffered &&
+  i == footballTeam[2].foulsSuffered;
+  i++
+) {
+  footballTeam[0].point = randomNumber;
+  footballTeam[1].point = randomNumber;
+  footballTeam[2].point = randomNumber;
+  footballTeam[0].foulsSuffered = randomNumber;
+  footballTeam[1].foulsSuffered = randomNumber;
+  footballTeam[2].foulsSuffered = randomNumber;
+}
+console.log(footballTeam);
