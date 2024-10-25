@@ -34,16 +34,19 @@ console.log(bycicles[0]);
 // ! Snack 2
 
 const footballTeam = [
+  /* Squadra 1 */
   {
     name: "Squadra1",
     point: 0,
     foulsSuffered: 0,
   },
+  /* Squadra 2 */
   {
     name: "Squadra2",
     point: 0,
     foulsSuffered: 0,
   },
+  /* Squadra 3 */
   {
     name: "Squadrta3",
     point: 0,
@@ -51,8 +54,10 @@ const footballTeam = [
   },
 ];
 
+/* Generatore di numeri */
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 
+/* Assegnazione punti e falli fatti */
 for (
   let i = 0;
   i == footballTeam[0].point &&
@@ -71,3 +76,37 @@ for (
   footballTeam[2].foulsSuffered = randomNumber;
 }
 console.log(footballTeam);
+
+/* Array nuovo */
+
+const newFootballTeam = [
+  /* Squadra 1 */
+  {
+    name: "Squadra1",
+    foulsSuffered: 0,
+  },
+  /* Squadra 2 */
+  {
+    name: "Squadra2",
+    foulsSuffered: 0,
+  },
+  /* Squadra 3 */
+  {
+    name: "Squadrta3",
+    foulsSuffered: 0,
+  },
+];
+
+/* Assegnazione falli fatti */
+for (
+  let i = 0;
+  i == newFootballTeam[0].foulsSuffered &&
+  i == newFootballTeam[1].foulsSuffered &&
+  i == newFootballTeam[2].foulsSuffered;
+  i++
+) {
+  newFootballTeam[0].foulsSuffered = randomNumber;
+  newFootballTeam[1].foulsSuffered = randomNumber;
+  newFootballTeam[2].foulsSuffered = randomNumber;
+}
+console.log(newFootballTeam);
